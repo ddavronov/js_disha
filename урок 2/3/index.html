@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Определить какое из трех, введенных пользователем, чисел максимальное и вывести его на экран. -->
+
+    <script type="text/javascript">
+    var a, b, c;
+
+        a = Number(prompt("Введите первое число:"));
+        b = Number(prompt("Введите второе число:"));
+        c = Number(prompt("Введите третье число:"));
+
+        if ((a > b) && (a > c)) {
+            alert(a);
+    }
+        else if ((b > a) && (b > c)) {
+            alert(b);   
+    }
+        else if ((c > a) && (c > b)) {
+            alert(c);
+    }
+    </script>
+</body>
+</html>

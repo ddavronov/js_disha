@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Дано два числа A и B где (A < B). 
+    Выведите на экран суму всех чисел расположенных в числовом промежутке от А до В. 
+    Выведите на экран все нечетные значения, расположенные в числовом промежутке от А до В. -->
+
+    <script type="text/javascript">
+    var a, b, s = 0, odd = "";
+        a = Number(prompt("Введите число a:"));
+        b = Number(prompt("Введите число b:"));
+        if (a < b) {
+            for (var i = a; i < b; i++) {
+                s += i; 
+                if (i % 2 != 0) {
+                    odd += i + " ";
+                }
+            }
+            alert(s);
+            alert(odd);
+        }
+    </script>
+</body>
+</html>
